@@ -1,14 +1,21 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {routing} from './app.routing';
 
 import { AppComponent }   from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { AboutComponent} from './components/pages/about/about.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, routing ],
   declarations: [ 
                   AppComponent,
-                  NavbarComponent
+                  NavbarComponent,
+                  JumbotronComponent,
+                  AboutComponent,
+                  HomeComponent
                 ],
   bootstrap:    [ AppComponent ]
 })
